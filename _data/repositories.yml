@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - d093w1z
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - d093w1z/sayhello
+  - d093w1z/polybar-now-playing
+  - d093w1z/opengl-tut
+  - d093w1z/InfectSim
+  - d093w1z/pasend
