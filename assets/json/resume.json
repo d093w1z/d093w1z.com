@@ -27,7 +27,7 @@
       }
     ]
   },
-    "work": [
+  "work": [
     {
       "name": "Dassault Systèmes Solutions Lab",
       "position": "Software Engineering Associate",
@@ -126,7 +126,18 @@
     {
       "name": "Tools & Technologies",
       "level": "",
-      "keywords": ["Linux", "Docker", "Git", "Postman", "API Development", "Power Automate", "Dynamics 365", "MS Office", "Google Apps Script", "LaTeX"]
+      "keywords": [
+        "Linux",
+        "Docker",
+        "Git",
+        "Postman",
+        "API Development",
+        "Power Automate",
+        "Dynamics 365",
+        "MS Office",
+        "Google Apps Script",
+        "LaTeX"
+      ]
     }
   ],
   "languages": [],
