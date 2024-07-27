@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>
+subtitle: Software Engineering Associate @ Dassault Systemes Solutions Lab | BE. Comp
 
 profile:
   align: right
@@ -24,7 +24,3 @@ I'm <b>Mukesh Tandale \| d093w1z</b>, and I've been programming for the past 8 y
 Here, you'll find a collection of my [projects](/projects) and [blog](/blog) posts covering topics that excite me the most: Linux, C++, and web development using the MERN stack. 
 
 When I'm not coding, I love tinkering with my Linux setup and diving into a good [book](/blog/tag/books). Join me as I explore the ever-evolving world of technology!
-
-
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
