@@ -13,14 +13,14 @@ profile:
     <p>India (IN)</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
 Welcome to my personal tech portfolio and blog!
 
-<blockquote class="my-3">
-  <b>I'm a wizard who transforms your digital dreams into reality.</b>
+<blockquote>
+  <p><b>I'm a wizard who transforms your digital dreams into reality.</b></p>
 </blockquote>
 
 More formally, I'm <b>Mukesh Tandale \| d093w1z</b>, and I've been programming for the past 8 years, starting my journey at the age of 16 as a self-taught programmer. My fascination with computers led me to earn a <b>Bachelor's degree in Computer Science.</b>
