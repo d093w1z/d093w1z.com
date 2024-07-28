@@ -8,17 +8,17 @@
 
 ---
 
-[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
+[![deploy](https://github.com/d093w1z/d093w1z.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/d093w1z/d093w1z.com/actions/workflows/deploy.yml)
 [![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
-[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
+[![GitHub contributors](https://img.shields.io/github/contributors/d093w1z/d093w1z.com.svg)](https://github.com/d093w1z/d093w1z.com/graphs/contributors/)
 [![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
 [![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
 [![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
 
-[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio)
-[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
+[![GitHub release](https://img.shields.io/github/v/release/d093w1z/d093w1z.com)](https://github.com/d093w1z/d093w1z.com/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/d093w1z/d093w1z.com?color=blue)](https://github.com/d093w1z/d093w1z.com/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/d093w1z/d093w1z.com)](https://github.com/d093w1z/d093w1z.com)
+[![GitHub forks](https://img.shields.io/github/forks/d093w1z/d093w1z.com)](https://github.com/d093w1z/d093w1z.com/fork)
 
 </div>
 
@@ -193,13 +193,13 @@ Workshop on Structured Probabilistic Inference & Generative Modeling (ICML: <a h
 
 ### Desktop
 
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/master/lighthouse_results/desktop/alshedivat_github_io_al_folio_.html)
+[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/d093w1z/d093w1z.com/blob/master/lighthouse_results/desktop/alshedivat_github_io_al_folio_.html)
 
 Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=desktop)
 
 ### Mobile
 
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/master/lighthouse_results/mobile/alshedivat_github_io_al_folio_.html)
+[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/d093w1z/d093w1z.com/blob/master/lighthouse_results/mobile/alshedivat_github_io_al_folio_.html)
 
 Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=mobile)
 
@@ -445,21 +445,21 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 ### All Contributors
 
 <a href="https://contrib.rocks">
-  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio" />
+  <img src="https://contrib.rocks/image?repo=d093w1z/d093w1z.com" />
 </a>
 
 ## Star History
 
-<a href="https://star-history.com/#alshedivat/al-folio&Date">
+<a href="https://star-history.com/#d093w1z/d093w1z.com&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=d093w1z/d093w1z.com&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=d093w1z/d093w1z.com&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=d093w1z/d093w1z.com&type=Date" />
   </picture>
 </a>
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/master/LICENSE).
+The theme is available as open source under the terms of the [MIT License](https://github.com/d093w1z/d093w1z.com/blob/master/LICENSE).
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
