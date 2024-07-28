@@ -6,7 +6,9 @@
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+      "packages": "locales, imagemagick, build-essential, zlib1g-dev, jupyter-nbconvert, inotify-tools, procps"
+    },
     "ghcr.io/devcontainers-contrib/features/prettier:1": {}
   },
 
