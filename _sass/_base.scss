@@ -183,8 +183,11 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
-
+  width: 70%;
+  img {
+    max-width: 100%; /* Ensure image doesn't exceed the profile container */
+    height: auto;
+  }
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -198,7 +201,8 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .profile.float-left {
@@ -214,6 +218,9 @@ ul.task-list input[type="checkbox"] {
         display: block;
       }
     }
+  }
+  .profile.float-right {
+    margin-left: 1rem;
   }
 }
 
@@ -507,7 +514,7 @@ footer.sticky-bottom {
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
