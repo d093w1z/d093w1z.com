@@ -1,14 +1,14 @@
 {% if page.chart and page.chart.echarts %}
   <script
-    src="{{ site.third_party_libraries.echarts.url.js.library }}"
-    integrity="{{ site.third_party_libraries.echarts.integrity.js.library }}"
-    crossorigin="anonymous"
+    src='{{ site.third_party_libraries.echarts.url.js.library }}'
+    integrity='{{ site.third_party_libraries.echarts.integrity.js.library }}'
+    crossorigin='anonymous'
   ></script>
   {% if site.enable_darkmode %}
     <script
-      src="{{ site.third_party_libraries.echarts.url.js.dark_theme }}"
-      integrity="{{ site.third_party_libraries.echarts.integrity.js.dark_theme }}"
-      crossorigin="anonymous"
+      src='{{ site.third_party_libraries.echarts.url.js.dark_theme }}'
+      integrity='{{ site.third_party_libraries.echarts.integrity.js.dark_theme }}'
+      crossorigin='anonymous'
     ></script>
   {% endif %}
   <script>
@@ -18,7 +18,7 @@
        this is done to enable retrieving the code again when changing theme between light/dark */
     document.addEventListener('readystatechange', () => {
       if (document.readyState === 'complete') {
-        document.querySelectorAll('pre>code.language-echarts').forEach((elem) => {
+        document.querySelectorAll('pre>code.language-echarts').forEach(elem => {
           const jsonData = elem.textContent;
           const backup = elem.parentElement;
           backup.classList.add('unloaded');

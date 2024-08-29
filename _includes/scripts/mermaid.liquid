@@ -1,16 +1,16 @@
 {% if page.mermaid and page.mermaid.enabled %}
   <script
     defer
-    src="{{ site.third_party_libraries.mermaid.url.js }}"
-    integrity="{{ site.third_party_libraries.mermaid.integrity.js }}"
-    crossorigin="anonymous"
+    src='{{ site.third_party_libraries.mermaid.url.js }}'
+    integrity='{{ site.third_party_libraries.mermaid.integrity.js }}'
+    crossorigin='anonymous'
   ></script>
   {% if page.mermaid.zoomable %}
     <script
       defer
-      src="{{ site.third_party_libraries.d3.url.js }}"
-      integrity="{{ site.third_party_libraries.d3.integrity.js }}"
-      crossorigin="anonymous"
+      src='{{ site.third_party_libraries.d3.url.js }}'
+      integrity='{{ site.third_party_libraries.d3.integrity.js }}'
+      crossorigin='anonymous'
     ></script>
   {% endif %}
   <script>
@@ -20,7 +20,7 @@
        this is done to enable retrieving the code again when changing theme between light/dark */
     document.addEventListener('readystatechange', () => {
       if (document.readyState === 'complete') {
-        document.querySelectorAll('pre>code.language-mermaid').forEach((elem) => {
+        document.querySelectorAll('pre>code.language-mermaid').forEach(elem => {
           const svgCode = elem.textContent;
           const backup = elem.parentElement;
           backup.classList.add('unloaded');

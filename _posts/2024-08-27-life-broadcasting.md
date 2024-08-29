@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Life Broadcasting and the Online Presence of Individual Lives
-date: 2024-07-25 12:21:11
+date: 2024-08-27 12:21:11
 description: Is the Meaning of Self at Risk?
 tags: work-life-balance
 draft: true

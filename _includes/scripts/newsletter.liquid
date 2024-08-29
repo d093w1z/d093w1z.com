@@ -1,57 +1,59 @@
 <div
-  class="newsletter-form-container"
+  class='newsletter-form-container'
   {% if include.center %}
-    style="margin: 20px"
+    style='margin: 20px'
   {% endif %}
 >
   <form
-    class="newsletter-form"
-    action="https://app.loops.so/api/newsletter-form/{{ site.newsletter.endpoint }}"
-    method="POST"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+    class='newsletter-form'
+    action='https://app.loops.so/api/newsletter-form/{{ site.newsletter.endpoint }}'
+    method='POST'
+    style='justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}'
   >
     <input
-      class="newsletter-form-input"
-      name="newsletter-form-input"
-      type="email"
-      placeholder="user@example.com"
-      required=""
+      class='newsletter-form-input'
+      name='newsletter-form-input'
+      type='email'
+      placeholder='user@example.com'
+      required=''
     >
 
     <button
-      type="submit"
-      class="newsletter-form-button"
-      style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+      type='submit'
+      class='newsletter-form-button'
+      style='justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}'
     >
       subscribe
     </button>
 
     <button
-      type="button"
-      class="newsletter-loading-button"
-      style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+      type='button'
+      class='newsletter-loading-button'
+      style='justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}'
     >
       Please wait...
     </button>
   </form>
 
   <div
-    class="newsletter-success"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+    class='newsletter-success'
+    style='justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}'
   >
-    <p class="newsletter-success-message">You're subscribed!</p>
+    <p class='newsletter-success-message'>You're subscribed!</p>
   </div>
 
   <div
-    class="newsletter-error"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
+    class='newsletter-error'
+    style='justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}'
   >
-    <p class="newsletter-error-message">Oops! Something went wrong, please try again</p>
+    <p class='newsletter-error-message'>
+      Oops! Something went wrong, please try again
+    </p>
   </div>
 
   <button
-    class="newsletter-back-button"
-    type="button"
+    class='newsletter-back-button'
+    type='button'
     onmouseout='this.style.textDecoration="none"'
     onmouseover='this.style.textDecoration="underline"'
   >
@@ -74,7 +76,8 @@
 
     const rateLimit = () => {
       errorContainer.style.display = 'flex';
-      errorMessage.innerText = 'Too many signups, please try again in a little while';
+      errorMessage.innerText =
+        'Too many signups, please try again in a little while';
       submitButton.style.display = 'none';
       formInput.style.display = 'none';
       backButton.style.display = 'block';
@@ -104,7 +107,7 @@
         'Content-Type': 'application/x-www-form-urlencoded',
       },
     })
-      .then((res) => [res.ok, res.json(), res])
+      .then(res => [res.ok, res.json(), res])
       .then(([ok, dataPromise, res]) => {
         if (ok) {
           // If response successful
@@ -114,13 +117,15 @@
         } else {
           // If response unsuccessful
           // display error message or response status
-          dataPromise.then((data) => {
+          dataPromise.then(data => {
             errorContainer.style.display = 'flex';
-            errorMessage.innerText = data.message ? data.message : res.statusText;
+            errorMessage.innerText = data.message
+              ? data.message
+              : res.statusText;
           });
         }
       })
-      .catch((error) => {
+      .catch(error => {
         // check for cloudflare error
         if (error.message === 'Failed to fetch') {
           rateLimit();
@@ -155,14 +160,22 @@
     submitButton.style.display = 'flex';
   }
 
-  var formContainers = document.getElementsByClassName('newsletter-form-container');
+  var formContainers = document.getElementsByClassName(
+    'newsletter-form-container'
+  );
 
   for (var i = 0; i < formContainers.length; i++) {
     var formContainer = formContainers[i];
-    var handlersAdded = formContainer.classList.contains('newsletter-handlers-added');
+    var handlersAdded = formContainer.classList.contains(
+      'newsletter-handlers-added'
+    );
     if (handlersAdded) continue;
-    formContainer.querySelector('.newsletter-form').addEventListener('submit', submitHandler);
-    formContainer.querySelector('.newsletter-back-button').addEventListener('click', resetFormHandler);
+    formContainer
+      .querySelector('.newsletter-form')
+      .addEventListener('submit', submitHandler);
+    formContainer
+      .querySelector('.newsletter-back-button')
+      .addEventListener('click', resetFormHandler);
     formContainer.classList.add('newsletter-handlers-added');
   }
 </script>

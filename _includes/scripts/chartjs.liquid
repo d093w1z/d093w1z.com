@@ -1,9 +1,9 @@
 {% if page.chart and page.chart.chartjs %}
   <script
     defer
-    src="{{ site.third_party_libraries.chartjs.url.js }}"
-    integrity="{{ site.third_party_libraries.chartjs.integrity.js }}"
-    crossorigin="anonymous"
+    src='{{ site.third_party_libraries.chartjs.url.js }}'
+    integrity='{{ site.third_party_libraries.chartjs.integrity.js }}'
+    crossorigin='anonymous'
   ></script>
   <script>
     $(document).ready(function () {
@@ -17,7 +17,10 @@
         _text = $this.text();
         $this.text('').append($canvas);
         _ctx = $canvas.get(0).getContext('2d');
-        _ctx && _text && new Chart(_ctx, JSON.parse(_text)) && $this.attr('data-processed', true);
+        _ctx &&
+          _text &&
+          new Chart(_ctx, JSON.parse(_text)) &&
+          $this.attr('data-processed', true);
       });
     });
   </script>

@@ -1,33 +1,36 @@
 ---
 layout: default
 ---
-<iframe id="download_cv_pdf" style="display:none;"></iframe>
+<iframe id='download_cv_pdf' style='display:none;'></iframe>
 {% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
+  <div class='post'>
+    <header class='post-header'>
+      <h1 class='post-title'>
         {{ page.title }}
         {% if page.cv_pdf %}
           <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf" onclick="document.getElementById('download_cv_pdf').src = '{{ page.cv_pdf }}'"></i
+            href='#'
+            target='_blank'
+            rel='noopener noreferrer'
+            class='float-right'
+            ><i
+              class='fa-solid fa-file-pdf'
+              onclick="document.getElementById('download_cv_pdf').src = '{{ page.cv_pdf }}'"
+            ></i
           ></a>
         {% endif %}
       </h1>
       {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+        <p class='post-description'>{{ page.description }}</p>
       {% endif %}
     </header>
 
     <article>
-      <div class="cv">
+      <div class='cv'>
         {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+          <a class='anchor' id='{{ entry.title }}'></a>
+          <div class='card mt-3 p-3'>
+            <h3 class='card-title font-weight-medium'>{{ entry.title }}</h3>
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -49,36 +52,43 @@ layout: default
     </article>
   </div>
 {% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
+  <div class='post'>
+    <header class='post-header'>
+      <h1 class='post-title'>
         {{ page.title }}
         {% if page.cv_pdf %}
           <a
-            href="#"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf" onclick="document.getElementById('download_cv_pdf').src = '{{ page.cv_pdf }}'"></i
+            href='#'
+            rel='noopener noreferrer'
+            class='float-right'
+            ><i
+              class='fa-solid fa-file-pdf'
+              onclick="document.getElementById('download_cv_pdf').src = '{{ page.cv_pdf }}'"
+            ></i
           ></a>
         {% endif %}
       </h1>
       {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+        <p class='post-description'>{{ page.description }}</p>
       {% endif %}
     </header>
 
     <article>
-      <div class="cv">
+      <div class='cv'>
         {% for data in site.data.resume %}
           {% if site.jsonresume and site.jsonresume.size > 0 %}
             {% unless site.jsonresume contains data[0] %}
               {% continue %}
             {% endunless %}
           {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+          {% if data[0] == 'meta' or data[1].size == 0 %}
+            {% continue %}
+          {% endif %}
+          <a class='anchor' id='{{ data[0] }}'></a>
+          <div class='card mt-3 p-3'>
+            <h3 class='card-title font-weight-medium'>
+              {{ data[0] | capitalize }}
+            </h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
